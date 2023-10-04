@@ -10,28 +10,50 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="assets/style/input.css" />
     <link rel="stylesheet" href="dist/output.css" />
 
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
-    <header class="relative flex justify-around">
+    <header class="relative flex items-center justify-between p-6">
       <div>
         <img src="assets/images/logo.svg" alt="Insure lettering logo" />
       </div>
-      <div id="mobileNavBtn" class="md:hidden">
+      <div id="mobileNavBtn" class="p-3 cursor-pointer md:hidden">
         <img src="assets/images/nav-menu.png" alt="" />
       </div>
-      <nav class="md:block">
+      <nav
+        id="menu"
+        class="absolute left-0 hidden w-full h-screen bg-fixed bg-right-bottom bg-no-repeat bg-zinc-800 top-20 bg-mobile-nav-bg-pattern md:block md:bg-none md:bg-white"
+      >
         <ul
-          class="absolute top-16 flex left-0 flex-col text-center md:flex-row space-x-6"
+          class="flex flex-col items-center pt-3 text-xl text-center text-white md:space-x-6 md:flex-row md:text-zinc-800"
         >
-          <li><a>How we work</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Account</a></li>
-          <li><a>View plans</a></li>
+          <li
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+          >
+            <a>How we work</a>
+          </li>
+          <li
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+          >
+            <a>Blog</a>
+          </li>
+          <li
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+          >
+            <a>Account</a>
+          </li>
+          <li
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+          >
+            <a>View plans</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <script src="app.js"></script>
   </body>
 </html>
