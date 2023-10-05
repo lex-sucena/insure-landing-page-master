@@ -16,37 +16,39 @@
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
-    <header class="relative flex items-center justify-between p-6">
+    <header
+      class="relative flex items-center justify-between p-6 md:static md:justify-between md:px-14"
+    >
       <div>
         <img src="assets/images/logo.svg" alt="Insure lettering logo" />
       </div>
       <div id="mobileNavBtn" class="p-3 cursor-pointer md:hidden">
-        <img src="assets/images/nav-menu.png" alt="" />
+        <img id="btnImg" src="./assets/images/nav-menu.png" alt="" />
       </div>
       <nav
         id="menu"
-        class="absolute left-0 hidden w-full h-screen bg-fixed bg-right-bottom bg-no-repeat bg-zinc-800 top-20 bg-mobile-nav-bg-pattern md:block md:bg-none md:bg-white"
+        class="left-0 hidden w-full h-screen bg-fixed bg-right-bottom bg-no-repeat md:h-auto bg-zinc-800 bg-mobile-nav-bg-pattern top-20 md:w-auto md:block md:bg-none md:bg-white"
       >
         <ul
           class="flex flex-col items-center pt-3 text-xl text-center text-white md:space-x-6 md:flex-row md:text-zinc-800"
         >
           <li
-            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2 md:w-auto"
           >
             <a>How we work</a>
           </li>
           <li
-            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2 md:w-auto"
           >
             <a>Blog</a>
           </li>
           <li
-            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2 md:w-auto"
           >
             <a>Account</a>
           </li>
           <li
-            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2"
+            class="block w-3/4 py-3 mb-3 border-2 border-transparent hover:border-current hover:cursor-pointer hover:border-2 md:w-auto"
           >
             <a>View plans</a>
           </li>

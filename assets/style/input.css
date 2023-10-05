@@ -4,4 +4,9 @@
 
 #menu.block {
   display: block;
+  position: fixed;
+  background-size: 100%;
+}
+.changeImgSrc {
+  content: url("../../assets/images/cancel-nav-menu.png");
 }
